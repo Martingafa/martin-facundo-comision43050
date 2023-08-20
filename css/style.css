@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                                                    /* HEADER */
+
+                                                                    /* NAVEGADOR */
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right:10px;
+}
+.logo {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+.logo h1{
+    font-size: 2em;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+}
+nav ul a:hover{
+color: black;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header nav ul li a{
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: white
+}
+header{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(0, 102, 192);
+}
+header nav ul {
+    list-style:none;
+}
+
+                                                                    /* MAIN */
+
+                                                                    /* INDEX */
+
+#hero {
+    background-image: url(../img/45594-celeste-y-blanco.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container-hero{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.container-hero h1{
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+.container-hero p{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.servicios {
+    background-image: url(../img/20890-celestes\ \(1\).jpg);
+    width: 100%;
+    
+}
+
+    h2{
+    font-size: 5em;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    
+}
+.carta{
+    margin-top: 30px;
+}
+.carta img{
+    height: 300px;
+    width: 400px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+    h3{
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+.carta a:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in;
+}
+.container-servicios{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.carrusel{
+    width: 100%;
+    background-color: rgb(96, 167, 229);
+}
+.catalogo-items{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.catalogo-items a{
+    margin: 20px;
+}
+
+#reparacion img{
+    height: 300px;
+    width: 400px;
+    
+}
+#reparacion div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reparacion div p{
+    margin: 30px;
+}
+#bobinado img{
+    height: 300px;
+    width: 400px;
+}
+#bobinado div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bobinado div p{
+    margin: 30px;
+}
+#repuestos img{
+    height: 300px;
+    width: 400px;
+}
+#repuestos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#repuestos div p{
+    margin: 30px;
+}
+.servicios-container{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-catalogo{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+body{
+    font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+a button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 200px;
+    border-radius: 10px;
+        border: 1px solid navy(0,0,0,0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 102, 192);
+    }
+    
+    button:hover{
+        background-color: rgb(44, 98, 246);
+    }
+    
+                                                            /* SOBRE NOSOTROS */
+    .nosotros{
+        margin: 40px;
+    }
+    
+    
+    .nosotros div{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .nosotros div p{
+        margin: 30px;
+    }
+    .contactarnos div{
+        display: flex;
+        justify-content:center;
+        margin-bottom: 30px;
+    }
+    
+                                                        /* DONDE ENCONTRARNOS */
+    
+    .horarios-mapa{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-top:30px ;
+    }
+    .mapa{
+        margin-left: 50px;
+    }
+    .horarios{
+        margin-right: 500px;
+    }
+    .horarios ul li{
+        margin: 30px;
+        font-size: 1.2em;
+    }
+    
+    /* CATALOGO */
+    
+    .catalogo h2{
+        margin-top: 40px;
+    }
+    
+    .carta-catalogo p{
+        font-size: 1.5em;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .container-catalogo{
+        display: flex;
+        flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.carta-catalogo img{
+    height: 300px;
+    width: 400px;
+    border-radius:20px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+                                                                /* FOOTER */
+footer{
+    background-color: rgb(0, 102, 192);
+    height: 80px;
+}
+.flecha{
+    display: flex;
+    justify-content: center;
+    
+}
+.flecha a img{
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+.flecha a img:hover{
+    transform: scale(1.05);
+    transition: all 0.1 ease-in;
+}
+.whassap{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+}
+.whassap a img{
+    width: 70px;
+    height: 70px;
+}
+.whassap img:hover{
+    transform: scale(1.05);
+    transition: all 0.1 ease-in;
+}
+.carrousel-image{
+    width: 500px;
+    height: 320px;
+}
+                                                                /* MEDIA */
+
+@media screen and (max-width:1320px){
+    .carta img{
+        height: 250px;
+        width: 350px;
+    }
+}
+@media screen and (max-width:1173px){
+    .carta img{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .container-servicios {
+        height: 600px;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: "carta1 carta2"
+    }
+    #reparacion img{
+        height: 200px;
+        width: 300px;
+        margin-top: 30px;
+    }
+    #bobinado img{
+    height: 200px;
+    width: 300px;
+    margin-top: 30px;
+    }
+    #repuestos img{
+    height: 200px;
+    width: 300px;
+    margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .container-hero p{
+        display: none;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #reparacion img{
+    height: 150px;
+    width: 200px;
+    margin-top: 30px;
+    }
+    #bobinado img{
+    height: 150px;
+    width: 200px;
+    margin-top: 30px;
+    }
+    #repuestos img{
+    height: 150px;
+    width: 200px;
+    margin-top: 30px;
+    }
+    .nosotros img{
+        height: 450px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .nosotros img{
+        height: 350px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:720px){
+    .container-hero a button{
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .nosotros div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nosotros img{
+        margin-top: 50px;
+        height: 450px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:705px){
+    .container-hero h1{
+        font-size: 50px;    
+    }
+    .container-servicios{
+        height: 830px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    #hero{
+        height: 700px;
+    }
+    .servicios-container div{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton-catalogo a button{
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:520px){
+    .container-hero{
+        height: 400px;
+        position: absolute;
+        left: 50px;
+    }
+    .container-hero h1{
+        font-size: 45px;
+    }
+    .container-hero a button{
+        font-size: 15px;
+    }
+    .container-catalogo div img{
+        width: 300px;
+        height: 200px;
+    }
+    .contactarnos div a button{
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+        }
+    }
+
+@media screen and (max-width:440px){
+    .container-hero {
+        position: absolute;
+        left: 30px;
+    }
+    .logo h1{
+        display: none;
+    }
+    .container-hero h1{
+        font-size: 35px;
+    }
+    #hero{
+        height: 600px;
+    }
+    .contactarnos h3{
+        font-size: 20px;
+    }
+}
