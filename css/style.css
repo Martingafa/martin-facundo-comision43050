@@ -8,7 +8,7 @@
 
                                                                     /* NAVEGADOR */
 
-.logo img{
+/* .logo img{
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -29,6 +29,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+header nav ul {
+    list-style:none;
+}
 header nav ul{
     display: flex;
     gap: 30px;
@@ -36,41 +39,38 @@ header nav ul{
 }
 nav ul a:hover{
 color: black;
-}
+} */
 
-.logo {
+/* .logo {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-}
+} */
 
-header nav ul li a{
+/* header nav ul li a{
     text-decoration:none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     color: white
-}
-header{
+} */
+/* header{
     width: 100%;
     padding: 15px;
     background-color: rgb(0, 102, 192);
-}
-header nav ul {
-    list-style:none;
-}
+} */
 
                                                                     /* MAIN */
 
                                                                     /* INDEX */
 
-#hero {
+/* .hero {
     background-image: url(../img/45594-celeste-y-blanco.jpg);
     height: 90vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-.container-hero{
+} */
+/* .container-hero{
     position: absolute;
     top: 200px;
     left: 100px;
@@ -89,9 +89,9 @@ header nav ul {
     background-image: url(../img/20890-celestes\ \(1\).jpg);
     width: 100%;
     
-}
+} */
 
-    h2{
+    /* h2{
     font-size: 5em;
     color: rgb(0, 0, 0);
     display: flex;
@@ -100,22 +100,22 @@ header nav ul {
     margin-bottom: 60px;
     margin-top: 50px;
     
-}
-.carta{
+} */
+/* .carta{
     margin-top: 30px;
 }
 .carta img{
     height: 300px;
     width: 400px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-}
-    h3{
+} */
+    /* h3{
     margin-bottom: 30px;
     font-size: 2.5em;
     display: flex;
     justify-content: center;
-}
-.carta a:hover{
+} */
+/* .carta a:hover{
     transform: scale(1.05);
     transition: all 0.2s ease-in;
 }
@@ -125,9 +125,9 @@ header nav ul {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-}
+} */
 
-.carrusel{
+/* .carrusel{
     width: 100%;
     background-color: rgb(96, 167, 229);
 }
@@ -135,10 +135,10 @@ header nav ul {
     display: flex; 
     align-items: center;
     justify-content: center;
-}
-.catalogo-items a{
+} */
+/* .catalogo-items a{
     margin: 20px;
-}
+} */
 
 #reparacion img{
     height: 300px;
@@ -192,7 +192,7 @@ body{
     font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-a button{
+/* a button{
     font-size: 20px;
     font-weight: bold;
     padding: 5px 200px;
@@ -205,7 +205,7 @@ a button{
     
     button:hover{
         background-color: rgb(44, 98, 246);
-    }
+    } */
     
                                                             /* SOBRE NOSOTROS */
     .nosotros{

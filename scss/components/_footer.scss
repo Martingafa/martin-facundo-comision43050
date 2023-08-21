@@ -1,0 +1,36 @@
+footer{
+    background-color: rgb(166, 211, 250);
+    height: 80px;
+    position: static;
+    bottom: 0px;
+    .flecha{
+        display: flex;
+        justify-content: center;
+        a{
+            img{
+                width: 70px;
+                height: 70px;
+                box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                &:hover{
+                    transform: scale(1.05);
+                    transition: all 0.1 ease-in;
+                }
+            }
+        }
+    }
+    .whassap{
+        position: fixed;
+        bottom: 20px;
+        right:20px;
+        a{
+            img{
+                width: 70px;
+                height: 70px;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: all 0.1 ease-in;
+                }
+            }
+        }
+    }
+}
