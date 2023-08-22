@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +30,9 @@ a button {
   background-color: #0066c0; }
   a button:hover {
     background-color: #2c62f6; }
+
+body {
+  font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 .logo {
   display: flex;
@@ -132,11 +136,103 @@ header {
         height: 300px;
         width: 400px; }
 
+main {
+  background: linear-gradient(#49a1ee, white); }
+  main .servicios-container {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; }
+    main .servicios-container #reparacion img {
+      height: 300px;
+      width: 400px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+    main .servicios-container #reparacion div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .servicios-container #reparacion div p {
+        margin: 30px; }
+    main .servicios-container #bobinado img {
+      height: 300px;
+      width: 400px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+    main .servicios-container #bobinado div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .servicios-container #bobinado div p {
+        margin: 30px; }
+    main .servicios-container #repuestos img {
+      height: 300px;
+      width: 480px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+    main .servicios-container #repuestos div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main .servicios-container #repuestos div p {
+        margin: 30px; }
+  main .boton-catalogo {
+    margin: 30px;
+    display: flex;
+    justify-content: center; }
+
+.catalogo .container-catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .catalogo .container-catalogo .carta-catalogo p {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; }
+  .catalogo .container-catalogo .carta-catalogo img {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+
+.nosotros img {
+  margin-left: 30px; }
+
+.nosotros div {
+  display: flex;
+  justify-content: space-evenly; }
+  .nosotros div .historia p {
+    margin: 30px;
+    font-size: 20px; }
+
+.contactarnos div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px; }
+
+.horarios-mapa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 220px; }
+  .horarios-mapa .mapa {
+    margin-left: 50px; }
+    .horarios-mapa .mapa h2 {
+      margin-top: 40px;
+      margin-bottom: 40px; }
+  .horarios-mapa .horarios {
+    margin-top: 30px;
+    margin-right: 300px; }
+    .horarios-mapa .horarios ul li {
+      margin: 30px;
+      font-size: 1.2em; }
+
 footer {
   background-color: #a6d3fa;
   height: 80px;
-  position: static;
-  bottom: 0px; }
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
   footer .flecha {
     display: flex;
     justify-content: center; }
@@ -157,7 +253,260 @@ footer {
       footer .whassap a img:hover {
         transform: scale(1.05);
         transition: all 0.1 ease-in; }
+  footer .contact-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    text-align: left; }
+    footer .contact-info p {
+      margin: 5px 0;
+      /* Ajusta los márgenes verticalmente */ }
 
-.carrousel-image {
-  width: 500px;
-  height: 320px; }
+@media screen and (max-width: 1320px) {
+  main .servicios .container-servicios .carta img {
+    height: 250px;
+    width: 350px; }
+  main .horarios-mapa {
+    margin-bottom: 185px; }
+    main .horarios-mapa .mapa {
+      margin-left: 50px; }
+      main .horarios-mapa .mapa h2 {
+        margin-top: 40px; }
+      main .horarios-mapa .mapa iframe {
+        height: 400px;
+        width: 450px; }
+    main .horarios-mapa .horarios {
+      margin-top: 30px;
+      margin-right: 200px; }
+      main .horarios-mapa .horarios ul li {
+        margin: 20px;
+        font-size: 1.2em; } }
+
+@media screen and (max-width: 1173px) {
+  main .servicios .container-servicios .carta img {
+    height: 200px;
+    width: 300px; } }
+
+@media screen and (max-width: 1150px) {
+  main .hero .container-hero h1 {
+    font-size: 60px; }
+  main .hero .container-hero p {
+    font-size: 30px; }
+  main .servicios .container-servicios {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "carta1 carta2"; }
+  main .servicios-container #reparacion img {
+    height: 200px;
+    width: 300px;
+    margin-top: 30px; }
+  main .servicios-container #bobinado img {
+    height: 200px;
+    width: 300px;
+    margin-top: 30px; }
+  main .servicios-container #repuestos img {
+    height: 200px;
+    width: 300px;
+    margin-top: 30px; } }
+
+@media screen and (max-width: 1020px) {
+  main .horarios-mapa {
+    margin-bottom: 265px; }
+    main .horarios-mapa .mapa {
+      margin-left: 50px; }
+      main .horarios-mapa .mapa h2 {
+        margin-top: 40px; }
+      main .horarios-mapa .mapa iframe {
+        height: 320px;
+        width: 360px; }
+    main .horarios-mapa .horarios {
+      margin-top: 30px;
+      margin-right: 150px; }
+      main .horarios-mapa .horarios ul li {
+        margin: 20px;
+        font-size: 1.0em; } }
+
+@media screen and (max-width: 970px) {
+  main .hero {
+    height: 750px; }
+    main .hero .container-hero {
+      width: 800px; }
+      main .hero .container-hero h1 {
+        font-size: 50px; } }
+
+@media screen and (max-width: 970px) and (max-width: 900px) {
+  main .hero .container-hero {
+    left: 50px;
+    width: 700px; } }
+
+@media screen and (max-width: 970px) {
+  .servicios-container #reparacion img {
+    height: 150px;
+    width: 200px;
+    margin-top: 30px; }
+  .servicios-container #bobinado img {
+    height: 150px;
+    width: 200px;
+    margin-top: 30px; }
+  .servicios-container #repuestos img {
+    height: 150px;
+    width: 200px;
+    margin-top: 30px; }
+  .nosotros img {
+    height: 450px;
+    width: 300px; } }
+
+@media screen and (max-width: 840px) {
+  main .horarios-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px; }
+    main .horarios-mapa .mapa {
+      margin-left: 50px; }
+      main .horarios-mapa .mapa h2 {
+        margin-top: 40px; }
+      main .horarios-mapa .mapa iframe {
+        height: 380px;
+        width: 460px; }
+    main .horarios-mapa .horarios {
+      margin-top: 30px; }
+      main .horarios-mapa .horarios ul li {
+        margin: 20px;
+        font-size: 1.0em; } }
+
+@media screen and (max-width: 800px) {
+  .nosotros img {
+    height: 350px;
+    width: 250px; } }
+
+@media screen and (max-width: 750px) {
+  main .hero .container-hero {
+    left: 20px;
+    width: 650px; } }
+
+@media screen and (max-width: 720px) {
+  .hero .container-hero a button {
+    text-align: center;
+    justify-content: center;
+    padding: 10px; }
+  .nosotros div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .nosotros img {
+    margin-top: 50px;
+    height: 450px;
+    width: 350px; } }
+
+@media screen and (max-width: 705px) {
+  main .hero .container-hero {
+    width: 500px;
+    left: 45px; }
+    main .hero .container-hero p {
+      display: none; }
+    main .hero .container-hero h1 {
+      font-size: 35px; }
+  main .servicios .container-servicios {
+    height: 830px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  main .servicios-container div {
+    display: flex;
+    flex-direction: column; }
+  main .carrusel #carouselExampleIndicators .carousel-item .catalogo-item a img {
+    height: 100px;
+    width: 100px; }
+  main .boton-catalogo a button {
+    text-align: center;
+    justify-content: center;
+    padding: 10px; }
+  main .nosotros .parrafo1 p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 630px) {
+  main .horarios-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .horarios-mapa .mapa {
+      margin-left: 50px; }
+      main .horarios-mapa .mapa h2 {
+        margin-top: 40px; }
+      main .horarios-mapa .mapa iframe {
+        height: 280px;
+        width: 360px; }
+    main .horarios-mapa .horarios {
+      margin-top: 30px;
+      margin-right: 100px; }
+      main .horarios-mapa .horarios ul li {
+        margin: 20px;
+        font-size: 1.0em; } }
+
+@media screen and (max-width: 550px) {
+  main .hero {
+    height: 700px; }
+    main .hero .container-hero {
+      width: 400px; }
+      main .hero .container-hero h1 {
+        font-size: 30px; } }
+
+@media screen and (max-width: 520px) {
+  main .hero .container-hero {
+    height: 400px;
+    left: 50px; }
+    main .hero .container-hero h1 {
+      font-size: 30px; }
+    main .hero .container-hero a button {
+      font-size: 15px; }
+  main .catalogo .container-catalogo .carta-catalogo img {
+    width: 300px;
+    height: 200px; }
+  main .contactarnos div a button {
+    text-align: center;
+    justify-content: center;
+    padding: 20px; }
+  main .nosotros img {
+    margin-top: 50px;
+    height: 350px;
+    width: 250px; } }
+
+@media screen and (max-width: 470px) {
+  main .hero .container-hero {
+    left: 15px;
+    width: 400px; } }
+
+@media screen and (max-width: 440px) {
+  header .logo h1 {
+    display: none; }
+  main .hero {
+    height: 600px; }
+    main .hero .container-hero {
+      width: 300px;
+      left: 25px; }
+      main .hero .container-hero h1 {
+        font-size: 25px; }
+  main .contactarnos h3 {
+    font-size: 20px; }
+  main .horarios-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .horarios-mapa .mapa {
+      margin-left: 20px; }
+      main .horarios-mapa .mapa h2 {
+        margin-top: 40px; }
+      main .horarios-mapa .mapa iframe {
+        height: 230px;
+        width: 300px; }
+    main .horarios-mapa .horarios {
+      margin-top: 30px;
+      margin-right: 0px; }
+      main .horarios-mapa .horarios ul li {
+        margin: 20px;
+        font-size: 1.0em; } }

@@ -140,7 +140,7 @@ color: black;
     margin: 20px;
 } */
 
-#reparacion img{
+/* #reparacion img{
     height: 300px;
     width: 400px;
     
@@ -187,10 +187,10 @@ color: black;
     margin: 30px;
     display: flex;
     justify-content: center;
-}
-body{
+} */
+/* body{
     font-family: sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
+} */
 
 /* a button{
     font-size: 20px;
@@ -208,7 +208,7 @@ body{
     } */
     
                                                             /* SOBRE NOSOTROS */
-    .nosotros{
+    /* .nosotros{
         margin: 40px;
     }
     
@@ -225,11 +225,11 @@ body{
         display: flex;
         justify-content:center;
         margin-bottom: 30px;
-    }
+    } */
     
                                                         /* DONDE ENCONTRARNOS */
     
-    .horarios-mapa{
+    /* .horarios-mapa{
         display: flex;
         justify-content:space-between;
         align-items: center;
@@ -245,10 +245,10 @@ body{
         margin: 30px;
         font-size: 1.2em;
     }
-    
+     */
     /* CATALOGO */
     
-    .catalogo h2{
+    /* .catalogo h2{
         margin-top: 40px;
     }
     
@@ -271,9 +271,9 @@ body{
     border-radius:20px;
     margin: 20px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-}
+} */
                                                                 /* FOOTER */
-footer{
+/* footer{
     background-color: rgb(0, 102, 192);
     height: 80px;
 }
@@ -307,10 +307,10 @@ footer{
 .carrousel-image{
     width: 500px;
     height: 320px;
-}
+} */
                                                                 /* MEDIA */
 
-@media screen and (max-width:1320px){
+/* @media screen and (max-width:1320px){
     .carta img{
         height: 250px;
         width: 350px;
@@ -346,9 +346,9 @@ footer{
     width: 300px;
     margin-top: 30px;
     }
-}
+} */
 
-@media screen and (max-width:900px){
+/* @media screen and (max-width:900px){
     .container-hero p{
         display: none;
     }
@@ -374,16 +374,16 @@ footer{
         height: 450px;
         width: 300px;
     }
-}
+} */
 
-@media screen and (max-width:800px){
+/* @media screen and (max-width:800px){
     .nosotros img{
         height: 350px;
         width: 250px;
     }
-}
+} */
 
-@media screen and (max-width:720px){
+/* @media screen and (max-width:720px){
     .container-hero a button{
         text-align: center;
         justify-content: center;
@@ -399,9 +399,9 @@ footer{
         height: 450px;
         width: 350px;
     }
-}
+} */
 
-@media screen and (max-width:705px){
+/* @media screen and (max-width:705px){
     .container-hero h1{
         font-size: 50px;    
     }
@@ -424,9 +424,9 @@ footer{
         justify-content: center;
         padding: 10px;
     }
-}
+} */
 
-@media screen and (max-width:520px){
+/* @media screen and (max-width:520px){
     .container-hero{
         height: 400px;
         position: absolute;
@@ -447,9 +447,9 @@ footer{
         justify-content: center;
         padding: 20px;
         }
-    }
+    } */
 
-@media screen and (max-width:440px){
+/* @media screen and (max-width:440px){
     .container-hero {
         position: absolute;
         left: 30px;
@@ -466,4 +466,4 @@ footer{
     .contactarnos h3{
         font-size: 20px;
     }
-}
+} */

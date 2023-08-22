@@ -1,0 +1,456 @@
+@media screen and (max-width:1320px){
+    main{
+        .servicios{
+            .container-servicios{
+                .carta{
+                    img{
+                    height: 250px;
+                    width: 350px;
+                    }
+                }
+            }
+        }
+        .horarios-mapa{
+            margin-bottom: 185px;
+            .mapa{
+                margin-left: 50px;
+                h2{
+                    margin-top: 40px;
+                }
+                iframe{
+                    height: 400px;
+                    width: 450px;
+                }
+            }
+            .horarios{
+                margin-top:30px ;
+                margin-right: 200px;
+                ul{
+                    li{
+                        margin: 20px;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1173px){
+    main{
+        .servicios{
+            .container-servicios{
+                .carta{
+                    img{
+                    height: 200px;
+                    width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1150px){
+    main{
+        .hero{
+            .container-hero{
+                h1{
+                    font-size: 60px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
+        .servicios{
+            .container-servicios {
+                height: 600px;
+                display: grid;
+                grid-template-columns: 300px 300px;
+                grid-template-rows: 300px 300px;
+                grid-template-areas: "carta1 carta2"
+            }
+        }
+    .servicios-container{
+            #reparacion{
+                img{
+                height: 200px;
+                width: 300px;
+                margin-top: 30px;
+                }
+            }
+            #bobinado{ 
+                img{
+                height: 200px;
+                width: 300px;
+                margin-top: 30px;
+                }
+            }
+            #repuestos{
+                img{
+                height: 200px;
+                width: 300px;
+                margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1020px){
+    main{
+        .horarios-mapa{
+            margin-bottom: 265px;
+            .mapa{
+                margin-left: 50px;
+                h2{
+                    margin-top: 40px;
+                }
+                iframe{
+                    height: 320px;
+                    width: 360px;
+                }
+            }
+            .horarios{
+                margin-top:30px ;
+                margin-right: 150px;
+                ul{
+                    li{
+                        margin: 20px;
+                        font-size: 1.0em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:970px){
+main{
+    .hero{
+            height: 750px;
+        .container-hero{ 
+            width: 800px;
+            h1{
+                font-size: 50px;    
+            }
+        }
+    }
+}
+@media screen and (max-width:900px){
+    main{
+        .hero{
+            .container-hero{ 
+                left: 50px;
+                width: 700px;
+            }
+        }
+    }
+}
+        .servicios-container{
+                #reparacion{
+                    img{
+                    height: 150px;
+                    width: 200px;
+                    margin-top: 30px;
+                    }
+                }
+                #bobinado{
+                img{
+                    height: 150px;
+                    width: 200px;
+                    margin-top: 30px;
+                    }
+                }
+                #repuestos{
+                    img{
+                    height: 150px;
+                    width: 200px;
+                    margin-top: 30px;
+                    }
+                }
+            }
+        .nosotros img{
+            height: 450px;
+            width: 300px;
+        }
+    }
+@media screen and (max-width:840px){
+    main{
+        .horarios-mapa{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 55px;
+            .mapa{
+                margin-left: 50px;
+                h2{
+                    margin-top: 40px;
+                }
+                iframe{
+                    height: 380px;
+                    width: 460px;
+                }
+            }
+            .horarios{
+                margin-top:30px ;
+                ul{
+                    li{
+                        margin: 20px;
+                        font-size: 1.0em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .nosotros{
+        img{
+            height: 350px;
+            width: 250px;
+        }
+    }
+}
+@media screen and (max-width:750px){
+    main{
+        .hero{
+            .container-hero{ 
+                left: 20px;
+                width: 650px;
+            }
+        }
+    }
+}
+@media screen and (max-width:720px){
+    .hero{
+        .container-hero{
+            a{
+                button{
+                    text-align: center;
+                    justify-content: center;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .nosotros{
+        div{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            margin-top: 50px;
+            height: 450px;
+            width: 350px;
+        }
+    }
+}
+@media screen and (max-width:705px){
+    main{
+        .hero{
+            .container-hero{ 
+                width: 500px;
+                left: 45px;
+                p{
+                display: none;
+                }   
+                h1{
+                    font-size: 35px;    
+                }
+            }
+        }
+        .servicios{
+            .container-servicios{
+                height: 830px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .servicios-container{
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .carrusel{
+            #carouselExampleIndicators{
+                .carousel-item{
+                    .catalogo-item{
+                        a{
+                            img{
+                                height: 100px;
+                                width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .boton-catalogo{
+            a{ 
+                button{
+                    text-align: center;
+                    justify-content: center;
+                    padding: 10px;
+                }
+            }
+        }
+        .nosotros{
+            .parrafo1{
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:630px){
+    main{
+        .horarios-mapa{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .mapa{
+                margin-left: 50px;
+                h2{
+                    margin-top: 40px;
+                }
+                iframe{
+                    height: 280px;
+                    width: 360px;
+                }
+            }
+            .horarios{
+                margin-top:30px ;
+                margin-right: 100px;
+                ul{
+                    li{
+                        margin: 20px;
+                        font-size: 1.0em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:550px){
+    main{
+        .hero{
+                height: 700px;
+            .container-hero{ 
+                width: 400px;
+                h1{
+                    font-size: 30px;    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:520px){
+    main{
+        .hero{
+            .container-hero{
+                height: 400px;
+                left: 50px;
+                h1{
+                    font-size: 30px;
+                }
+                a{ 
+                    button{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .catalogo{
+            .container-catalogo{ 
+                .carta-catalogo{ 
+                    img{
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+        .contactarnos{
+            div{
+                a{ 
+                    button{
+                        text-align: center;
+                        justify-content: center;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+        .nosotros{
+            img{
+                margin-top: 50px;
+                height: 350px;
+                width: 250px;
+            }
+        }
+    }
+}
+@media screen and (max-width:470px){
+    main{
+        .hero{
+            .container-hero{ 
+                left: 15px;
+                width: 400px;
+            }
+        }
+    }
+}
+@media screen and (max-width:440px){
+    header{
+        .logo{
+            h1{
+                display: none;
+            }
+        }
+    }
+    main{
+        .hero{
+            height: 600px;
+            .container-hero {
+                width: 300px;
+                left: 25px;
+                h1{
+                    font-size: 25px;
+                }
+            }
+        }
+        .contactarnos{ 
+            h3{
+                font-size: 20px;
+            }
+        }
+        .horarios-mapa{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .mapa{
+                margin-left: 20px;
+                h2{
+                    margin-top: 40px;
+                }
+                iframe{
+                    height: 230px;
+                    width: 300px;
+                }
+            }
+            .horarios{
+                margin-top:30px ;
+                margin-right: 0px;
+                ul{
+                    li{
+                        margin: 20px;
+                        font-size: 1.0em;
+                    }
+                }
+            }
+        }
+    }
+}

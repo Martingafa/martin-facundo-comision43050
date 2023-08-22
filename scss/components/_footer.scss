@@ -1,8 +1,10 @@
 footer{
     background-color: rgb(166, 211, 250);
     height: 80px;
-    position: static;
-    bottom: 0px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     .flecha{
         display: flex;
         justify-content: center;
@@ -33,4 +35,16 @@ footer{
             }
         }
     }
+    .contact-info {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+        text-align: left;
+        
+        p {
+            margin: 5px 0; /* Ajusta los márgenes verticalmente */
+        }
+    }
 }
+
