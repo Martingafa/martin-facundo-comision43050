@@ -11,7 +11,6 @@
             }
         }
         .horarios-mapa{
-            margin-bottom: 185px;
             .mapa{
                 margin-left: 50px;
                 h2{
@@ -24,7 +23,7 @@
             }
             .horarios{
                 margin-top:30px ;
-                margin-right: 200px;
+                margin-right: 100px;
                 ul{
                     li{
                         margin: 20px;
@@ -94,11 +93,20 @@
             }
         }
     }
+    .carrusel{
+        .catalogo-items{
+            a{
+                img{
+                    height: 250px;
+                    width: 350px;
+                }
+            }
+        }
+    }
 }
-@media screen and (max-width:1020px){
+@media screen and (max-width:1140px){
     main{
         .horarios-mapa{
-            margin-bottom: 265px;
             .mapa{
                 margin-left: 50px;
                 h2{
@@ -111,7 +119,32 @@
             }
             .horarios{
                 margin-top:30px ;
-                margin-right: 150px;
+                margin-right: 10px;
+                ul{
+                    li{
+                        margin: 20px;
+                        font-size: 1.0em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1050px){
+    main{
+        .horarios-mapa{
+            .mapa{
+                margin-left: 50px;
+                h2{
+                    margin-top: 40px;
+                }
+                iframe{
+                    height: 320px;
+                    width: 360px;
+                }
+            }
+            .horarios{
+                margin-top:30px ;
                 ul{
                     li{
                         margin: 20px;
@@ -227,6 +260,16 @@ main{
                     text-align: center;
                     justify-content: center;
                     padding: 10px;
+                }
+            }
+        }
+    }
+    .carrusel{
+        .catalogo-items{
+            a{
+                img{
+                    height: 200px;
+                    width: 300px;
                 }
             }
         }

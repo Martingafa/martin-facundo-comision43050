@@ -1,5 +1,6 @@
+@import "./base/variables";
+
     .hero {
-        background: linear-gradient(rgb(0, 102, 192), rgb(166, 211, 250));
         background-image: url(../img/45594-celeste-y-blanco.jpg);
         height: 90vh;
         background-repeat: no-repeat;
@@ -11,28 +12,27 @@
             left: 100px;
             width: 100vh;
             h1{
-                font-size: 70px;
-                // color: rgb(244, 235, 235);
-                color: rgb(0, 0, 0);
-                margin-bottom: 30px;
-                text-shadow: rgb(255, 255, 255) 1px 1px;
+                font-size: $font-size-large;
+                color: $font-color;
+                margin-bottom: $container-margin;
+                text-shadow: $text-shadow 1px 1px;
             }
             p{
-                font-size: 40px;
-                margin-bottom: 30px;
+                font-size: $font-size-medium;
+                margin-bottom: $container-margin;
             }
             a{
                 button{
-                    font-size: 20px;
+                    font-size: $font-size-small;
                     font-weight: bold;
-                    padding: 5px 200px;
-                    border-radius: 10px;
+                    padding: $button-padding-vertical $button-padding-horizontal;
+                    border-radius: $button-border-radius;
                     border: 1px solid navy(0,0,0,0.5);
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-                    color: rgb(255, 255, 255);
-                    background-color: rgb(0, 102, 192);
+                    box-shadow: 2px 2px 10px $shadow-color;
+                    color: $text-shadow;
+                    background-color: $primary-color;
                     &:hover{
-                        background-color: rgb(44, 98, 246);
+                        background-color: $hover-primary-color;
                     }
                 }
             }
@@ -41,7 +41,7 @@
 
     .servicios {
         width: 100%;
-        background: linear-gradient(rgb(166, 211, 250), rgb(0, 102, 192));
+        background: linear-gradient($secondary-color, $primary-color);
         .container-servicios{
             height: 50vh;
             width: 100%;
@@ -49,16 +49,16 @@
             flex-direction: row;
             justify-content:space-around;
             .carta{
-                margin-top: 30px;
+                margin-top: $container-margin;
                 a {
                     &:hover{
                         transform: scale(1.05);
                         transition: all 0.2s ease-in;
                     }
                     img{
-                        height: 300px;
-                        width: 400px;
-                        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                        height: $card-height;
+                        width: $card-width;
+                        box-shadow: 2px 2px 10px $shadow-color;
                         backdrop-filter: blur(10px);
                     }
                 }
@@ -68,7 +68,7 @@
 
     .carrusel{
         width: 100%;
-        background: linear-gradient(rgb(0, 102, 192), rgb(166, 211, 250));
+        background: linear-gradient($primary-color, $secondary-color);
         .catalogo-items{
             display: flex; 
             align-items: center;
@@ -76,15 +76,17 @@
             a{
                 margin: 20px;
                 img{
-                    height: 300px;
-                    width: 400px;
+                    height: $card-height;
+                    width: $card-width;
                 }
             }
         }
     }
                                 // SERVICIOS
+body {
+    margin: 0; 
+    background: linear-gradient($third-color, $text-shadow);                               
     main{
-        background: linear-gradient(rgb(73, 161, 238), rgb(255, 255, 255));
         .servicios-container{
             // margin-top: 30px;
             margin-left: 50px;
@@ -92,52 +94,52 @@
             flex-direction: column;
             #reparacion{
                 img{
-                    height: 300px;
-                    width: 400px;
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                    height: $card-height;
+                    width: $card-width;
+                    box-shadow: 2px 2px 10px $shadow-color;
                 }
                 div{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     p{
-                        margin: 30px;
+                        margin: $container-margin;
                     }
                 }
             }
             #bobinado{
                 img{
-                    height: 300px;
-                    width: 400px;
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                    height: $card-height;
+                    width: $card-width;
+                    box-shadow: 2px 2px 10px $shadow-color;
                 }
                 div{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     p{
-                        margin: 30px;
+                        margin: $container-margin;
                     }
                 }
             }
             #repuestos{
                 img{
-                    height: 300px;
-                    width: 480px;
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                    height: $card-height;
+                    width: $card-width;
+                    box-shadow: 2px 2px 10px $shadow-color;
                 }
                 div{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     p{
-                        margin: 30px;
+                        margin: $container-margin;
                     }
                 }
             }
         }
         .boton-catalogo{
-            margin: 30px;
+            margin: $container-margin;
             display: flex;
             justify-content: center;
         }
@@ -151,7 +153,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: $container-margin;
             .carta-catalogo{
                 p{
                     font-size: 1.5em;
@@ -160,11 +162,11 @@
                     justify-content: center;
                 }
                 img{
-                    height: 300px;
-                    width: 400px;
+                    height: $card-height;
+                    width: $card-width;
                     border-radius:20px;
                     margin: 20px;
-                    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+                    box-shadow: 2px 2px 10px $shadow-color;
                 }
             }
         }
@@ -172,15 +174,15 @@
                             // NOSOTROS
     .nosotros{
         img{
-            margin-left: 30px;
+            margin-left: $container-margin;
         }
         div{
             display: flex;
             justify-content: space-evenly;
             .historia{
                 p{
-                    margin: 30px;
-                    font-size: 20px;
+                    margin: $container-margin;
+                    font-size: $font-size-small;
                 }
             }
         }
@@ -192,28 +194,50 @@
             margin-bottom: 150px;
         }
     }
-
+}
                             // HORARIOS Y MAPA
-    .horarios-mapa{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        margin-bottom: 220px;
-        .mapa{
-            margin-left: 50px;
-            h2{
-                margin-top: 40px;
-                margin-bottom: 40px;
+body{
+    main{
+        .horarios-mapa{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            .mapa{
+                // margin-bottom: 30px;
+                h2{
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
+            }
+            .horarios{
+                ul{
+                    li{
+                        margin: $container-margin;
+                        font-size: 1.0em;
+                    }
+                }
             }
         }
-        .horarios{
-            margin-top:30px ;
-            margin-right: 300px;
-            ul{
-                li{
-                    margin: 30px;
-                    font-size: 1.2em;
+        .formulario{
+            .container{
+                h1{
+                    margin-top: 30px;
+                }
+                form {
+                    padding: 20px;
+                    background-color: #f8f9fa;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    
+                    .form-group {
+                        margin-bottom: 20px;
+                        
+                        label {
+                            font-weight: bold;
+                        }
+                    }
                 }
             }
         }
     }
+}
