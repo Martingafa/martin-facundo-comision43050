@@ -20,3 +20,27 @@ $container-margin: 30px;
 
 $card-width: 400px;
 $card-height: 300px;
+$card-width2:200px;
+$card-height2: 150px;
+
+@mixin h2title {
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+    text-shadow: rgb(255, 255, 255) 1px 1px;}
+
+
+@mixin imagenes-300px($card-height,$card-width2){
+    height: $card-width2;
+    width: $card-height;
+    margin-top: $container-margin;
+}
+
+@mixin imagenes-200px($card-height2,$card-width2){
+    height: $card-height2;
+    width: $card-width2;
+    margin-top: $container-margin;
+}

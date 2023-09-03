@@ -114,12 +114,8 @@ body {
             display: flex;
             flex-direction: column;
             h2 {
-            font-size: 3em;
-            color: black;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            margin-bottom: 60px;}
+            @include h2title;
+            }
             #reparacion{
                 h3 {
                     margin-bottom: 30px;
@@ -193,12 +189,8 @@ body {
                         // CATALOGO
     .catalogo{
         h2 {
-            font-size: 3em;
-            color: black;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            margin-bottom: 60px;}
+            @include h2title;
+            }
         .container-catalogo{
             display: flex;
             flex-wrap: wrap;
@@ -213,7 +205,7 @@ body {
                 }
                 img{
                     height: $card-height;
-                    width: 270px;
+                    width: $card-height;
                     border-radius:20px;
                     margin: 20px;
                     box-shadow: 2px 2px 10px $shadow-color;
@@ -224,12 +216,8 @@ body {
                             // NOSOTROS
     .nosotros{
         h2 {
-            font-size: 3em;
-            color: black;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            margin-bottom: 60px;}
+            @include h2title;
+        }
         img{
             margin-left: $container-margin;
         }
