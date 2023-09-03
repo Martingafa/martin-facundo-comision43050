@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +81,7 @@ header {
     top: 200px;
     left: 100px;
     width: 100vh; }
-    .hero .container-hero h1 {
+    .hero .container-hero h2 {
       font-size: 70px;
       color: black;
       margin-bottom: 30px;
@@ -105,6 +104,14 @@ header {
 .servicios {
   width: 100%;
   background: linear-gradient(#a6d3fa, #0066c0); }
+  .servicios h2 {
+    font-size: 3em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+    text-shadow: white 1px 1px; }
   .servicios .container-servicios {
     height: 50vh;
     width: 100%;
@@ -113,6 +120,11 @@ header {
     justify-content: space-around; }
     .servicios .container-servicios .carta {
       margin-top: 30px; }
+      .servicios .container-servicios .carta h3 {
+        margin-bottom: 30px;
+        font-size: 2em;
+        display: flex;
+        justify-content: center; }
       .servicios .container-servicios .carta a:hover {
         transform: scale(1.05);
         transition: all 0.2s ease-in; }
@@ -125,6 +137,14 @@ header {
 .carrusel {
   width: 100%;
   background: linear-gradient(#0066c0, #a6d3fa); }
+  .carrusel h2 {
+    font-size: 3em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+    text-shadow: black 1px 1px; }
   .carrusel .catalogo-items {
     display: flex;
     align-items: center;
@@ -133,7 +153,8 @@ header {
       margin: 20px; }
       .carrusel .catalogo-items a img {
         height: 300px;
-        width: 400px; }
+        width: 400px;
+        object-fit: cover; }
 
 body {
   margin: 0;
@@ -142,6 +163,18 @@ body {
     margin-left: 50px;
     display: flex;
     flex-direction: column; }
+    body main .servicios-container h2 {
+      font-size: 3em;
+      color: black;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 60px; }
+    body main .servicios-container #reparacion h3 {
+      margin-bottom: 30px;
+      font-size: 2em;
+      display: flex;
+      justify-content: center; }
     body main .servicios-container #reparacion img {
       height: 300px;
       width: 400px;
@@ -151,7 +184,13 @@ body {
       justify-content: center;
       align-items: center; }
       body main .servicios-container #reparacion div p {
+        font-size: 25px;
         margin: 30px; }
+    body main .servicios-container #bobinado h3 {
+      margin-bottom: 30px;
+      font-size: 2em;
+      display: flex;
+      justify-content: center; }
     body main .servicios-container #bobinado img {
       height: 300px;
       width: 400px;
@@ -161,7 +200,13 @@ body {
       justify-content: center;
       align-items: center; }
       body main .servicios-container #bobinado div p {
+        font-size: 25px;
         margin: 30px; }
+    body main .servicios-container #repuestos h3 {
+      margin-bottom: 30px;
+      font-size: 2em;
+      display: flex;
+      justify-content: center; }
     body main .servicios-container #repuestos img {
       height: 300px;
       width: 400px;
@@ -171,11 +216,19 @@ body {
       justify-content: center;
       align-items: center; }
       body main .servicios-container #repuestos div p {
+        font-size: 25px;
         margin: 30px; }
   body main .boton-catalogo {
     margin: 30px;
     display: flex;
     justify-content: center; }
+  body .catalogo h2 {
+    font-size: 3em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px; }
   body .catalogo .container-catalogo {
     display: flex;
     flex-wrap: wrap;
@@ -188,18 +241,25 @@ body {
       justify-content: center; }
     body .catalogo .container-catalogo .carta-catalogo img {
       height: 300px;
-      width: 400px;
+      width: 270px;
       border-radius: 20px;
       margin: 20px;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+  body .nosotros h2 {
+    font-size: 3em;
+    color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px; }
   body .nosotros img {
     margin-left: 30px; }
   body .nosotros div {
     display: flex;
     justify-content: space-evenly; }
-    body .nosotros div .historia p {
+    body .nosotros div .historia div p {
       margin: 30px;
-      font-size: 20px; }
+      font-size: 25px; }
   body .contactarnos div {
     display: flex;
     justify-content: center;
@@ -263,8 +323,7 @@ footer {
     left: 50px;
     text-align: left; }
     footer .contact-info p {
-      margin: 5px 0;
-      /* Ajusta los márgenes verticalmente */ }
+      margin: 5px 0; }
 
 @media screen and (max-width: 1320px) {
   main .servicios .container-servicios .carta img {
@@ -290,7 +349,7 @@ footer {
     width: 300px; } }
 
 @media screen and (max-width: 1150px) {
-  main .hero .container-hero h1 {
+  main .hero .container-hero h2 {
     font-size: 60px; }
   main .hero .container-hero p {
     font-size: 30px; }
@@ -300,18 +359,24 @@ footer {
     grid-template-columns: 300px 300px;
     grid-template-rows: 300px 300px;
     grid-template-areas: "carta1 carta2"; }
-  main .servicios-container #reparacion img {
+  main .servicios-container #reparacion div img {
     height: 200px;
     width: 300px;
     margin-top: 30px; }
-  main .servicios-container #bobinado img {
+  main .servicios-container #reparacion p {
+    font-size: 15px; }
+  main .servicios-container #bobinado div img {
     height: 200px;
     width: 300px;
     margin-top: 30px; }
-  main .servicios-container #repuestos img {
+  main .servicios-container #bobinado div p {
+    font-size: 15px; }
+  main .servicios-container #repuestos div img {
     height: 200px;
     width: 300px;
     margin-top: 30px; }
+  main .servicios-container #repuestos div p {
+    font-size: 15px; }
   .carrusel .catalogo-items a img {
     height: 250px;
     width: 350px; } }
@@ -350,30 +415,36 @@ footer {
     height: 750px; }
     main .hero .container-hero {
       width: 800px; }
-      main .hero .container-hero h1 {
+      main .hero .container-hero h2 {
         font-size: 50px; } }
 
-@media screen and (max-width: 970px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   main .hero .container-hero {
     left: 50px;
-    width: 700px; } }
-
-@media screen and (max-width: 970px) {
-  .servicios-container #reparacion img {
+    width: 700px; }
+  main .servicios-container #reparacion div img {
     height: 150px;
     width: 200px;
     margin-top: 30px; }
-  .servicios-container #bobinado img {
+  main .servicios-container #reparacion div p {
+    font-size: 20px !important; }
+  main .servicios-container #bobinado div img {
     height: 150px;
     width: 200px;
     margin-top: 30px; }
-  .servicios-container #repuestos img {
+  main .servicios-container #bobinado div p {
+    font-size: 20px !important; }
+  main .servicios-container #repuestos div img {
     height: 150px;
     width: 200px;
     margin-top: 30px; }
-  .nosotros img {
+  main .servicios-container #repuestos div p {
+    font-size: 20px !important; }
+  main .nosotros img {
     height: 450px;
-    width: 300px; } }
+    width: 300px; }
+  main .nosotros .historia div p {
+    font-size: 20px !important; } }
 
 @media screen and (max-width: 840px) {
   main .horarios-mapa {
@@ -427,10 +498,10 @@ footer {
     left: 45px; }
     main .hero .container-hero p {
       display: none; }
-    main .hero .container-hero h1 {
+    main .hero .container-hero h2 {
       font-size: 35px; }
   main .servicios .container-servicios {
-    height: 830px;
+    height: 930px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -438,14 +509,32 @@ footer {
   main .servicios-container div {
     display: flex;
     flex-direction: column; }
-  main .carrusel #carouselExampleIndicators .carousel-item .catalogo-item a img {
+  main .servicios-container #reparacion div img {
+    height: 250px;
+    width: 300px;
+    margin-top: 30px; }
+  main .servicios-container #reparacion div p {
+    font-size: 18px !important; }
+  main .servicios-container #bobinado div img {
+    height: 250px;
+    width: 300px;
+    margin-top: 30px; }
+  main .servicios-container #bobinado div p {
+    font-size: 18px !important; }
+  main .servicios-container #repuestos div img {
+    height: 250px;
+    width: 300px;
+    margin-top: 30px; }
+  main .servicios-container #repuestos div p {
+    font-size: 18px !important; }
+  .carrusel #carouselExampleIndicators .carousel-item .catalogo-item a img {
     height: 100px;
     width: 100px; }
-  main .boton-catalogo a button {
+  .boton-catalogo a button {
     text-align: center;
     justify-content: center;
     padding: 10px; }
-  main .nosotros .parrafo1 p {
+  .nosotros .parrafo1 p {
     font-size: 15px; } }
 
 @media screen and (max-width: 630px) {
@@ -472,7 +561,7 @@ footer {
     height: 700px; }
     main .hero .container-hero {
       width: 400px; }
-      main .hero .container-hero h1 {
+      main .hero .container-hero h2 {
         font-size: 30px; } }
 
 @media screen and (max-width: 520px) {
@@ -483,9 +572,6 @@ footer {
       font-size: 30px; }
     main .hero .container-hero a button {
       font-size: 15px; }
-  main .catalogo .container-catalogo .carta-catalogo img {
-    width: 300px;
-    height: 200px; }
   main .contactarnos div a button {
     text-align: center;
     justify-content: center;

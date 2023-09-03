@@ -52,7 +52,7 @@
     main{
         .hero{
             .container-hero{
-                h1{
+                h2{
                     font-size: 60px;
                 }
                 p{
@@ -71,25 +71,40 @@
         }
     .servicios-container{
             #reparacion{
+                div{
                 img{
                 height: 200px;
                 width: 300px;
                 margin-top: 30px;
                 }
+            }
+            p{
+                font-size: 15px;
+            }
             }
             #bobinado{ 
+                div{
                 img{
                 height: 200px;
                 width: 300px;
                 margin-top: 30px;
+                }
+                p{
+                    font-size: 15px;
                 }
             }
+            }
             #repuestos{
+                div{
                 img{
                 height: 200px;
                 width: 300px;
                 margin-top: 30px;
                 }
+                p{
+                    font-size: 15px;
+                }
+            }
             }
         }
     }
@@ -161,50 +176,69 @@ main{
             height: 750px;
         .container-hero{ 
             width: 800px;
-            h1{
+            h2{
                 font-size: 50px;    
             }
         }
     }
 }
+}
 @media screen and (max-width:900px){
     main{
-        .hero{
-            .container-hero{ 
+        .hero{.container-hero{ 
                 left: 50px;
                 width: 700px;
+            }}
+        .servicios-container{
+            #reparacion{
+                div{img{
+                    height: 150px;
+                    width: 200px;
+                    margin-top: 30px;
+                    }
+                    p{
+                        font-size: 20px !important;
+                    }
+                }
+            }
+            #bobinado{
+                div{img{
+                    height: 150px;
+                    width: 200px;
+                    margin-top: 30px;
+                    }
+                    p{
+                        font-size: 20px !important;
+                    }
+                }
+            }
+            #repuestos{
+                div{img{
+                    height: 150px;
+                    width: 200px;
+                    margin-top: 30px;
+                    }
+                    p{
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+        .nosotros{
+            img{
+            height: 450px;
+            width: 300px;
+            }
+            .historia{
+                div{p{
+                    font-size: 20px !important;
+                    }
+                }
             }
         }
     }
 }
-        .servicios-container{
-                #reparacion{
-                    img{
-                    height: 150px;
-                    width: 200px;
-                    margin-top: 30px;
-                    }
-                }
-                #bobinado{
-                img{
-                    height: 150px;
-                    width: 200px;
-                    margin-top: 30px;
-                    }
-                }
-                #repuestos{
-                    img{
-                    height: 150px;
-                    width: 200px;
-                    margin-top: 30px;
-                    }
-                }
-            }
-        .nosotros img{
-            height: 450px;
-            width: 300px;
-        }
-    }
+
 @media screen and (max-width:840px){
     main{
         .horarios-mapa{
@@ -296,14 +330,14 @@ main{
                 p{
                 display: none;
                 }   
-                h1{
+                h2{
                     font-size: 35px;    
                 }
             }
         }
         .servicios{
             .container-servicios{
-                height: 830px;
+                height: 930px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -314,6 +348,43 @@ main{
             div{
                 display: flex;
                 flex-direction: column;
+            }
+                #reparacion{
+                    div{
+                    img{
+                        height: 250px;
+                        width: 300px;
+                    margin-top: 30px;
+                    }
+                    p{
+                        font-size: 18px !important;
+                    }
+                }
+                }
+                #bobinado{
+                    div{
+                        img{
+                        height: 250px;
+                        width: 300px;
+                        margin-top: 30px;
+                        }
+                        p{
+                            font-size: 18px !important;
+                        }
+                    }
+                }
+                #repuestos{
+                    div{
+                        img{
+                            height: 250px;
+                            width: 300px;
+                            margin-top: 30px;
+                        }
+                        p{
+                            font-size: 18px !important;
+                        }
+                    }
+                }
             }
         }
         .carrusel{
@@ -347,7 +418,7 @@ main{
             }
         }
     }
-}
+
 @media screen and (max-width:630px){
     main{
         .horarios-mapa{
@@ -383,7 +454,7 @@ main{
                 height: 700px;
             .container-hero{ 
                 width: 400px;
-                h1{
+                h2{
                     font-size: 30px;    
                 }
             }
@@ -402,16 +473,6 @@ main{
                 a{ 
                     button{
                         font-size: 15px;
-                    }
-                }
-            }
-        }
-        .catalogo{
-            .container-catalogo{ 
-                .carta-catalogo{ 
-                    img{
-                        width: 300px;
-                        height: 200px;
                     }
                 }
             }
