@@ -69,7 +69,7 @@ header {
   background-size: cover; }
   .hero .container-hero {
     position: relative;
-    top: 200px;
+    top: 150px;
     left: 100px;
     width: 100vh; }
     .hero .container-hero h2 {
@@ -340,7 +340,8 @@ footer {
 @media screen and (max-width: 1173px) {
   main .servicios .container-servicios .carta img {
     height: 200px;
-    width: 300px; } }
+    width: 300px;
+    margin-top: 30px; } }
 
 @media screen and (max-width: 1150px) {
   main .hero .container-hero h2 {
@@ -348,7 +349,7 @@ footer {
   main .hero .container-hero p {
     font-size: 30px; }
   main .servicios .container-servicios {
-    height: 600px;
+    height: 700px;
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 300px 300px;
@@ -495,7 +496,7 @@ footer {
     main .hero .container-hero h2 {
       font-size: 35px; }
   main .servicios .container-servicios {
-    height: 930px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
