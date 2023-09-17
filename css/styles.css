@@ -71,7 +71,7 @@ header {
     position: relative;
     top: 150px;
     left: 100px;
-    width: 100vh; }
+    width: 1000px; }
     .hero .container-hero h2 {
       font-size: 70px;
       color: black;
@@ -338,6 +338,8 @@ footer {
       font-size: 1.2em; } }
 
 @media screen and (max-width: 1173px) {
+  main .hero .container-hero {
+    width: 870px; }
   main .servicios .container-servicios .carta img {
     height: 200px;
     width: 300px;
